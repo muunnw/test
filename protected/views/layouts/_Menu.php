@@ -33,7 +33,7 @@
                 <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
                     <tbody><tr>
                         <td height="23"><input class="form_input" value="Search Site" name="Keyword" style="color:#999;" onfocus="if(this.value=='Search Site'){this.value=''; this.style.color='#333';}" onblur="if(this.value==''){this.value='Search Site'; this.style.color='#999';};"></td>
-                        <td><input type="image" name="imageField" src="/images/search.jpg"></td>
+                        <td><input type="image" name="imageField" src="<?php echo Yii::app()->request->baseUrl; ?>/static/t101/images/search.jpg"></td>
                     </tr>
                     </tbody></table>
             </form>

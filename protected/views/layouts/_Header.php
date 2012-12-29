@@ -5,5 +5,5 @@
      */
 ?>
 <div id="header" class="main_contents">
-    <div class="logo"><div><a href="/"><img src="/u_file/global/logo.png"></a></div></div>
+    <div class="logo"><div><a href="/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/static/t101/u_file/global/logo.png"></a></div></div>
 </div>
