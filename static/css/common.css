@@ -1,0 +1,34 @@
+/*
+ * 
+ *
+*/
+
+/*common*/
+s{text-decoration:none;}
+.mclearfix:before,.mclearfix:after{content:" ";display:block;height:0;overflow:hidden}.mclearfix:after{clear:both}.mclearfix{zoom:1}
+.a-img{display:block;}
+.a-wrap{display:block;text-decoration:none;cursor:pointer;}
+.oneline{overflow:hidden;text-overflow:ellipsisi;white-space:nowrap;}
+
+/*wrapper*/
+.wrapper{}
+.wrapper-header,
+.wrapper-menu,
+.wrapper-nav,
+.wrapper-content,
+.wrapper-footer{}
+
+/*wrapper-header*/
+.wrapper-header{}
+
+/*wrapper-menu*/
+.wrapper-menu{}
+
+/*wrapper-nav*/
+.wrapper-nav{}
+
+/*wrapper-content*/
+.wrapper-content{}
+
+/*wrapper-footer*/
+.wrapper-footer{}
