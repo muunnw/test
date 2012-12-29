@@ -6,11 +6,12 @@
 
 class DefaultController extends Controller
 {
-    public $layout='column2';
+    public $layout='column1';
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $mu = "My hello world!";
+        return $this->render('index', $mu);
     }
 }
 ?>
