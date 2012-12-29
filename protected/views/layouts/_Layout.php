@@ -9,10 +9,15 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="javierwen(mumu)" />
+    <meta name="author" content="mumu" />
+    <meta name="keywords" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
+    <meta name="description" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/resetv2.min.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/css/common.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
+    ?>/static/t101/css/global.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/t101/css/lib.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
+    ?>/static/t101/css//style.css" media="screen" />
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 

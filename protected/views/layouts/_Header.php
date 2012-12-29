@@ -4,4 +4,6 @@
      * Date: 2012/12/29 22:59
      */
 ?>
-<?php echo CHtml::encode(Yii::app()->name); ?>
+<div id="header" class="main_contents">
+    <div class="logo"><div><a href="/"><img src="/u_file/global/logo.png"></a></div></div>
+</div>
