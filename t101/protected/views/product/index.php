@@ -1,3 +1,10 @@
+<?php
+
+    $this->breadcrumbs = array(
+        'Product' => array('product/index'),
+    );
+?>
+
 <div><div style="width:778px; height:auto; overflow:hidden;" class="ad"><img alt="" src="<?php echo CUrl::picUrl(array('dummy.png')) ?>" style="width: 778px; height: 120px"></div></div>
 
 <div id="page_contents"><div id="lib_product_list_1">

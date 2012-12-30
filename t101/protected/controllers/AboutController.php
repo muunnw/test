@@ -7,5 +7,10 @@
         {
             return $this->render('index');
         }
+
+        public function actionContact()
+        {
+            return $this->render('contact');
+        }
     }
 ?>

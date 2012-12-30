@@ -12,7 +12,7 @@
     </style>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
-                <td width="70%" class="f_nav"><a href="/" class="first">Home</a>|<a href="/about-us.html">About Us</a>|<a href="/products/">Products</a>|<a href="/news/">News</a>|<a href="/download/">Download</a>|<a href="/feedback.php">Feedback</a>|<a href="/contact-us.html">Contact Us</a></td>
+                <td width="70%" class="f_nav"><a href="/" class="first">Home</a>|<a href="/about/index">About Us</a>|<a href="/product/index">Products</a>|<a href="/news/index">News</a>|<a href="/download/index">Download</a>|<a href="/feedback/index">Feedback</a>|<a href="/about/contact">Contact Us</a></td>
                 <td width="30%" align="right">Copyright © 2011 Hitech</td>
             </tr>
             </tbody></table></div>
