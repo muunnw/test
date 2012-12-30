@@ -1,14 +1,9 @@
-<?php
-    /**
-     * User: javierwen(mumu)
-     * Date: 2012/12/29 22:53
-     */
-?>
-<?php  /* @var $this Controller */ ?>
-<!DOCTYPE html>
-<html lang="zh-cn">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="author" content="mumu" />
     <meta name="keywords" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
     <meta name="description" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
@@ -24,72 +19,59 @@
 
 <body>
 <div class="wrapper">
-    <!--S Header-->
-    <div class="wrapper-header">
+    <div id="header" class="main_contents">
         <?php
             $this->beginContent('//layouts/_Header');
             echo $content;
             $this->endContent();
         ?>
     </div>
-    <!--E Header-->
 
-    <!--S TopMenu-->
-    <div class="wrapper-menu">
-        <div class="menu">
-            <?php
-                $this->beginContent('//layouts/_Menu');
-                echo $content;
-                $this->endContent();
-            ?>
-        </div>
+    <div id="nav" class="main_contents">
+        <?php
+            $this->beginContent('//layouts/_Menu');
+            echo $content;
+            $this->endContent();
+        ?>
     </div>
-    <!--E TopMenu-->
 
-    <!--S Location-->
-    <div class="wrapper-location">
-        <div class="location">
-            <?php
+    <div id="main" class="main_contents">
+        <div class="main m_contents">
+            <div id="station">
+                <?php
                 $this->beginContent('//layouts/_Location');
                 echo $content;
                 $this->endContent();
-            ?>
-        </div>
-    </div>
-    <!--E Location-->
+                ?>
+            </div>
+            <div><img src="<?php echo CUrl::imgUrl(array('split_bg_top.png', 't101')) ?>"></div>
+            <div id="contents">
 
-    <!--S Content-->
-    <div class="wrapper-content">
-        <div class="main">
-            <div class="container">
-                <!--S RightContainer-->
-                <div class="right-container">
-                    <?php echo $content; ?>
-                </div>
-                <!--E RightContainer-->
-                <!--S LeftContainer-->
-                <div class="left-container">
+                <div class="siteLefter">
                     <?php
-                        $this->beginContent('//layouts/_Aside');
-                        echo $content;
-                        $this->endContent();
+                    $this->beginContent('//layouts/_Aside');
+                    echo $content;
+                    $this->endContent();
                     ?>
                 </div>
-                <!--E LeftContainer-->
+
+                <div class="siteRighter">
+                    <?php echo $content; ?>
+                </div>
+                <div class="clear"></div>
+
             </div>
+            <div><img src="<?php echo CUrl::imgUrl(array('split_bg_bottom.png', 't101')) ?>"></div>
         </div>
     </div>
-    <!--S Content-->
 
-    <!--S Footer-->
-    <div class="wrapper-footer">
+    <div id="footer" class="main_contents">
         <?php
             $this->beginContent('//layouts/_Footer');
             echo $content;
             $this->endContent();
         ?>
     </div>
-    <!--E Footer-->
 
 </div>
 

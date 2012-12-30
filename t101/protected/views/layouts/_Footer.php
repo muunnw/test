@@ -5,7 +5,7 @@
      */
 ?>
 
-<div id="footer" class="main_contents">
+
     <div class="contents"><style type="text/css">
         .f_nav a{margin:0 15px;}
         .f_nav a.first{margin-left:0;}
@@ -16,4 +16,3 @@
                 <td width="30%" align="right">Copyright © 2011 Hitech</td>
             </tr>
             </tbody></table></div>
-</div>

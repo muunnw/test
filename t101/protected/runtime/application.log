@@ -1106,3 +1106,209 @@ Stack trace:
 REQUEST_URI=/news/index
 HTTP_REFERER=http://localhost:801/product/index
 ---
+2012/12/30 14:41:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "subwoofer/accessories".' in D:\javiermu\test\y\web\CWebApplication.php:280
+Stack trace:
+#0 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('subwoofer/acces...')
+#1 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\javiermu\test\t101\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/subwoofer/accessories/
+HTTP_REFERER=http://localhost:801/about/index
+---
+2012/12/30 14:45:13 [error] [php] Invalid argument supplied for foreach() (D:\javiermu\test\y\web\helpers\CUrl.php:82)
+Stack trace:
+#0 D:\javiermu\test\y\web\CBaseController.php(96): AboutController->renderInternal()
+#1 D:\javiermu\test\y\web\CController.php(785): AboutController->renderFile()
+#2 D:\javiermu\test\t101\protected\controllers\AboutController.php(8): AboutController->render()
+#3 D:\javiermu\test\y\web\actions\CInlineAction.php(50): AboutController->actionIndex()
+#4 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\javiermu\test\y\web\CController.php(287): AboutController->runAction()
+#6 D:\javiermu\test\y\web\CController.php(266): AboutController->runActionWithFilters()
+#7 D:\javiermu\test\y\web\CWebApplication.php(276): AboutController->run()
+#8 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/about/index
+2012/12/30 15:14:13 [error] [php] Undefined variable: style (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:14:23 [error] [exception.CException] exception 'CException' with message 'Property "HomeController.style" is not defined.' in D:\javiermu\test\y\base\CComponent.php:131
+Stack trace:
+#0 D:\javiermu\test\t101\protected\views\layouts\_Layout.php(50): CComponent->__get('style')
+#1 D:\javiermu\test\y\web\CBaseController.php(127): require('D:\javiermu\tes...')
+#2 D:\javiermu\test\y\web\CBaseController.php(96): CBaseController->renderInternal('D:\javiermu\tes...', Array, true)
+#3 D:\javiermu\test\y\web\CController.php(785): CBaseController->renderFile('D:\javiermu\tes...', Array, true)
+#4 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): CController->render('index', 'sytle='display:...')
+#5 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#6 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\javiermu\test\y\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\javiermu\test\y\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\javiermu\test\y\web\CWebApplication.php(276): CController->run('index')
+#10 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('home/index')
+#11 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\javiermu\test\t101\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/home/index
+HTTP_REFERER=http://localhost:801/about/index
+---
+2012/12/30 15:14:33 [error] [php] Undefined variable: style (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:14:56 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:15:03 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:15:05 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:15:10 [error] [exception.CException] exception 'CException' with message 'Property "HomeController.data" is not defined.' in D:\javiermu\test\y\base\CComponent.php:131
+Stack trace:
+#0 D:\javiermu\test\t101\protected\views\layouts\_Layout.php(50): CComponent->__get('data')
+#1 D:\javiermu\test\y\web\CBaseController.php(127): require('D:\javiermu\tes...')
+#2 D:\javiermu\test\y\web\CBaseController.php(96): CBaseController->renderInternal('D:\javiermu\tes...', Array, true)
+#3 D:\javiermu\test\y\web\CController.php(785): CBaseController->renderFile('D:\javiermu\tes...', Array, true)
+#4 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): CController->render('index', 'sytle='display:...')
+#5 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#6 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\javiermu\test\y\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\javiermu\test\y\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\javiermu\test\y\web\CWebApplication.php(276): CController->run('index')
+#10 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('home/index')
+#11 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\javiermu\test\t101\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/home/index
+HTTP_REFERER=http://localhost:801/about/index
+---
+2012/12/30 15:15:12 [error] [exception.CException] exception 'CException' with message 'Property "HomeController.data" is not defined.' in D:\javiermu\test\y\base\CComponent.php:131
+Stack trace:
+#0 D:\javiermu\test\t101\protected\views\layouts\_Layout.php(50): CComponent->__get('data')
+#1 D:\javiermu\test\y\web\CBaseController.php(127): require('D:\javiermu\tes...')
+#2 D:\javiermu\test\y\web\CBaseController.php(96): CBaseController->renderInternal('D:\javiermu\tes...', Array, true)
+#3 D:\javiermu\test\y\web\CController.php(785): CBaseController->renderFile('D:\javiermu\tes...', Array, true)
+#4 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): CController->render('index', 'sytle='display:...')
+#5 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#6 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\javiermu\test\y\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\javiermu\test\y\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\javiermu\test\y\web\CWebApplication.php(276): CController->run('index')
+#10 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('home/index')
+#11 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\javiermu\test\t101\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/home/index
+HTTP_REFERER=http://localhost:801/about/index
+---
+2012/12/30 15:16:04 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:16:28 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:16:40 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:17:19 [error] [php] Undefined variable: data (D:\javiermu\test\t101\protected\views\layouts\_Layout.php:50)
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(785): HomeController->renderFile()
+#1 D:\javiermu\test\t101\protected\controllers\HomeController.php(13): HomeController->render()
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\javiermu\test\y\web\CController.php(287): HomeController->runAction()
+#5 D:\javiermu\test\y\web\CController.php(266): HomeController->runActionWithFilters()
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): HomeController->run()
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\t101\index.php(11): CWebApplication->run()
+REQUEST_URI=/home/index
+2012/12/30 15:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index".' in D:\javiermu\test\y\web\CWebApplication.php:280
+Stack trace:
+#0 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#1 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\javiermu\test\t101\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/news/index
+HTTP_REFERER=http://localhost:801/product/index
+---

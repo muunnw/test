@@ -9,8 +9,8 @@ class HomeController extends Controller
 
     public function actionIndex()
     {
-        $mu = "My hello world!";
-        return $this->render('index', $mu);
+        $style = "sytle=\"display:none;\"";
+        return $this->render('index', $style);
     }
 }
 ?>

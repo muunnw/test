@@ -1,12 +1,5 @@
-<?php
-    /**
-     * User: javierwen(mumu)
-     * Date: 2012/12/29 23:42
-     */
-?>
 
 
-<div id="nav" class="main_contents">
     <div class="nav_c">
         <div class="list">
             <?php $this->widget('zii.widgets.CMenu',array(
@@ -33,4 +26,3 @@
         </div>
         <div class="clear"></div>
     </div>
-</div>
