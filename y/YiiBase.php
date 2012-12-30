@@ -809,6 +809,7 @@ class YiiBase
 		'CGoogleApi' => '/web/helpers/CGoogleApi.php',
 		'CHtml' => '/web/helpers/CHtml.php',
 		'CJSON' => '/web/helpers/CJSON.php',
+		'CUrl' => '/web/helpers/CUrl.php',
 		'CJavaScript' => '/web/helpers/CJavaScript.php',
 		'CPradoViewRenderer' => '/web/renderers/CPradoViewRenderer.php',
 		'CViewRenderer' => '/web/renderers/CViewRenderer.php',

@@ -15,7 +15,7 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
-		'application.components.*',
+        'application.components.*',
 	),
 
 	'defaultController'=>'home',
@@ -45,13 +45,14 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-        'urlManager'=>array(
-        	'urlFormat'=>'path',
-        	'rules'=>array(
-        		'post/<id:\d+>/<title:.*?>'=>'post/view',
-        		'posts/<tag:.*?>'=>'post/index',
-        		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-        	),
+       'urlManager'=>array(
+           'urlFormat'=>'path',
+           'showScriptName'=>false,
+           'rules'=>array(
+               'post/<id:\d+>/<title:.*?>'=>'post/view',
+               'posts/<tag:.*?>'=>'post/index',
+               '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+           ),
         ),
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -73,4 +74,5 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>require(dirname(__FILE__).'/params.php'),
+
 );

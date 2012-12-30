@@ -1,24 +1,7 @@
 <?php
-/**
- * CHtml class file.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @link http://www.yiiframework.com/
- * @copyright Copyright &copy; 2008-2011 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
 
 
-/**
- * CHtml is a static class that provides a collection of helper methods for creating HTML views.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CHtml.php 3515 2011-12-28 12:29:24Z mdomba $
- * @package system.web.helpers
- * @since 1.0
- */
-
-class CHtml
+class CUrl
 {
 	const ID_PREFIX='yt';
 	/**
@@ -56,18 +39,18 @@ class CHtml
 
 	/**
 	 * Sets the default style for attaching jQuery event handlers.
-	 * 
-	 * If set to true (default), live/delegated style is used. Event handlers 
-	 * are attached to the document body and can process events from descendant 
+	 *
+	 * If set to true (default), live/delegated style is used. Event handlers
+	 * are attached to the document body and can process events from descendant
 	 * elements that are added to the document at a later time.
-	 * 
-	 * If set to false, direct style is used. Event handlers are attached directly 
-	 * to the DOM element, that must already exist on the page. Elements injected 
+	 *
+	 * If set to false, direct style is used. Event handlers are attached directly
+	 * to the DOM element, that must already exist on the page. Elements injected
 	 * into the page at a later time will not be processed.
-	 * 
+	 *
 	 * You can override this setting for a particular element by setting the htmlOptions live attribute
 	 * (see {@link clientChange}).
-	 * 
+	 *
 	 * For more information about attaching jQuery event handler see {@link http://api.jquery.com/on/}
 	 * @since 1.1.9
 	 * @see clientChange
@@ -79,6 +62,42 @@ class CHtml
         't102'=>'http://localhost:802',
         'res'=>'http://localhost:900',
     );
+
+    public static function cssUrl($uri){
+        $u = '';
+        foreach($uri as $name){
+            $u = '/'.$name.$u;
+        }
+        return self::encode(self::$sites['res'].'/css'.$u);
+    }
+    public static function lessUrl($uri){
+        $u = '';
+        foreach($uri as $name){
+            $u = '/'.$name.$u;
+        }
+        return self::encode(self::$sites['res'].'/less'.$u);
+    }
+    public static function imgUrl($uri){
+        $u = '';
+        foreach($uri as $name){
+            $u = '/'.$name.$u;
+        }
+        return self::encode(self::$sites['res'].'/img'.$u);
+    }
+    public static function picUrl($uri){
+        $u = '';
+        foreach($uri as $name){
+            $u = '/'.$name.$u;
+        }
+        return self::encode(self::$sites['res'].'/pic'.$u);
+    }
+    public static function jsUrl($uri){
+        $u = '';
+        foreach($uri as $name){
+            $u = '/'.$name.$u;
+        }
+        return self::encode(self::$sites['res'].'/js'.$u);
+    }
 
 	/**
 	 * Encodes special characters into HTML entities.
@@ -276,6 +295,22 @@ class CHtml
     public static function cssFiles($uris,$media='screen')
     {
         $base_url = self::$sites['res'].'/css/'.self::getRequestHost().'/';
+        $new_url = '';
+        foreach($uris as $file){
+            $new_url .= '<link rel="stylesheet" type="text/css" href="'.self::encode($base_url.$file).'" media='.$media.' />';
+        }
+        return $new_url;
+    }
+
+    /**
+     * Links to the specified img files.
+     * @param string $url the img URLs
+     * @param string $media the media that this img should apply to.
+     * @return string the img link.
+     */
+    public static function imgFiles($uris,$media='screen')
+    {
+        $base_url = self::$sites['res'].'/img/'.self::getRequestHost().'/';
         $new_url = '';
         foreach($uris as $file){
             $new_url .= '<link rel="stylesheet" type="text/css" href="'.self::encode($base_url.$file).'" media='.$media.' />';

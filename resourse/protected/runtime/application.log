@@ -338,3 +338,18 @@ Stack trace:
 #24 {main}
 REQUEST_URI=/index.php/post
 ---
+2012/12/30 07:58:15 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "index".' in D:\javiermu\test\y\web\CController.php:879
+Stack trace:
+#0 D:\javiermu\test\y\web\CController.php(783): CController->renderPartial('index', 'My hello world!', true)
+#1 D:\javiermu\test\resourse\protected\controllers\HomeController.php(13): CController->render('index', 'My hello world!')
+#2 D:\javiermu\test\y\web\actions\CInlineAction.php(50): HomeController->actionIndex()
+#3 D:\javiermu\test\y\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\javiermu\test\y\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\javiermu\test\y\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\javiermu\test\y\web\CWebApplication.php(276): CController->run('')
+#7 D:\javiermu\test\y\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 D:\javiermu\test\y\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\javiermu\test\resourse\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---

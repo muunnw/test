@@ -13,11 +13,10 @@
     <meta name="keywords" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
     <meta name="description" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
-    ?>/static/t101/css/global.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/t101/css/lib.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
-    ?>/static/t101/css//style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo CUrl::cssUrl(array('global.css', 't101')) ?>" media='screen' />
+    <link rel="stylesheet" type="text/css" href="<?php echo CUrl::cssUrl(array('lib.css', 't101')) ?>" media='screen' />
+    <link rel="stylesheet" type="text/css" href="<?php echo CUrl::cssUrl(array('style.css', 't101')) ?>" media='screen' />
+    <?php //echo CHtml::cssFiles(array('global.css','lib.css','style.css')); ?>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
@@ -96,7 +95,7 @@
 
 <?php
 
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl."/static/js/jquery/jquery-1.8.3.min.js", CClientScript::POS_HEAD);
+    Yii::app()->clientScript->registerScriptFile(CUrl::jsUrl(array('jquery-1.8.3.min.js', 'jquery')), CClientScript::POS_HEAD);
 
 //Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl."/static/js/jquery/jquery-1.8.3.min.js", CClientScript::POS_END);
 

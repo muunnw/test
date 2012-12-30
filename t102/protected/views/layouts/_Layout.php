@@ -13,11 +13,7 @@
     <meta name="keywords" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
     <meta name="description" content="Wholesale-Buy Wholesale Products from Chinese Wholesaler">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
-    ?>/static/t101/css/global.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/static/t101/css/lib.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;
-    ?>/static/t101/css//style.css" media="screen" />
+    <?php echo CHtml::cssFiles(array('global.css','lib.css','style.css')); ?>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 

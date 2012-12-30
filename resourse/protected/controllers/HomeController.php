@@ -9,8 +9,7 @@ class HomeController extends Controller
 
     public function actionIndex()
     {
-        $mu = "My hello world!";
-        return $this->render('index', $mu);
+        return $this->renderText('res server in.');
     }
 }
 ?>

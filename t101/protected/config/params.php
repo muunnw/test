@@ -16,4 +16,12 @@ return array(
 	'commentNeedApproval'=>true,
 	// the copyright information displayed in the footer section
 	'copyrightInfo'=>'Copyright &copy; 2009 by My Company.',
+
+//    //config the sites link
+//    'sites'=>array(
+//        't101'=>'http://localhost:801/',
+//        't102'=>'http://localhost:802/',
+//        'res'=>'http://localhost:900/',
+//        'res1'=>'http://localhost:901/',
+//    ),
 );
